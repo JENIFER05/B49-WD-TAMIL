@@ -1,0 +1,42 @@
+Write a blog about objects and its internal representation in Javascript
+
+Objects and their Internal Representation in JavaScript
+
+JavaScript is a versatile programming language that allows developers to create complex and dynamic web applications.
+ One of the key features of JavaScript is its support for objects, which are used to represent and manipulate 
+ data in the form of properties and methods. In this blog, we will get into objects in JavaScript and explore their internal representation.
+
+Objects in JavaScript
+
+In JavaScript, objects are collections of key-value pairs. They are used to represent entities 
+in the code that have properties a. Objects can be created using either object literal syntax or
+ constructor functions. Here is an example of an object literal
+
+example:
+const person = {
+  name: 'John',
+  age: 30,
+  email: 'john@example.com'
+};
+
+explanation:
+In this example, the person object has three properties: name, age, and email. 
+The values for these properties are 'John', 30, and 'john@example.com'.
+
+Internal Representation of Objects in JavaScript
+
+JavaScript objects are implemented as unordered collections of properties, 
+where each property has a name and a value. These properties can be either data
+properties or accessor properties. Data properties contain a value, while accessor 
+properties define functions to get or set the value.When an object is created, JavaScript 
+allocates a block of memory to store the object's properties. Each property consists of
+two parts: a property name (also known as a key) and a property descriptor. The property descriptor contains information
+about the property, such as its value, whether it is writable, enumerable, and configurable. 
+
+
+Conclusion
+
+JavaScript objects are a powerful tool for modeling complex data structures 
+and entities in code. Understanding how objects are represented internally 
+in JavaScript is essential for writing efficient and effective code. By leveraging the hash table
+and prototype chain, developers can create elegant and maintainable code that is easy to read and understand.

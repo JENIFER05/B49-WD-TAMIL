@@ -1,0 +1,43 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2
+
+
+
+HTTP (Hypertext Transfer Protocol) is a protocol used for transferring data
+between a client and a server over the internet.It is the foundation of data communication on the World Wide Web, 
+The latest versions of HTTP are HTTP/1.1 and HTTP/2, which differ in many aspects.
+In this blog, we will explore the differences between HTTP/1 and HTTP/2.
+
+1.Performance
+One of the primary differences between HTTP/1 and HTTP/2 is performance. 
+*HTTP/1 -  uses a request/response model where each request/response cycle is initiated by the client.
+This means that if a webpage has many resources, such as images, stylesheets, and JavaScript files, each of these resources has to be requested separately,
+which can cause latency and slow down the page load time.
+*HTTP/2 -  uses a multiplexing model that allows multiple requests to be sent and received at the same time. 
+This means that all the resources needed to display a webpage can be sent in a single request, which significantly reduces latency and improves the page load time.
+
+2.Header Compression
+*HTTP/1 - uses text-based headers, which can be large and consume a lot of bandwidth. This can lead to slower page load times, especially on slow internet connections. 
+*HTTP/2 - uses binary headers, which are much smaller and consume less bandwidth. Additionally, HTTP/2 uses header compression, 
+which further reduces the size of headers and improves performance.
+
+3.Server Push
+HTTP/1 - relies on the client to request all the resources needed to display a webpage. 
+This means that some resources may not be requested until the client has received the initial response from the server.
+HTTP/2 - supports server push, which allows the server to push resources to the client without waiting for the client to request them. 
+This can further improve performance by reducing latency and the number of round trips required to load a webpage.
+
+4.Security
+HTTP/1 and HTTP/2 both support encryption using SSL/TLS. However, HTTP/2 requires encryption to be enabled by default, which makes it more secure than HTTP/1.
+
+5.Compatibility
+HTTP/2 is backwards-compatible with HTTP/1, which means that older browsers and servers that do not support HTTP/2 can still communicate with those that do. 
+However, some features of HTTP/2 may not be available in older browsers.
+
+In conclusion,
+ HTTP/1 and HTTP/2 serve the same purpose of transferring data over the internet, 
+ HTTP/2 give significant improvements in terms of performance and efficiency compared to HTTP/1. 
+ HTTP/2's features such as multiplexing, server push, and header compression make it a more optimized protocol for modern web applications.
+ As more websites adopt HTTP/2, users can expect faster load times, improved performance, and a better browsing experience. 
+ HTTP/2 is a significant improvement over HTTP/1 in terms of performance, security, and functionality. 
+ It reduces latency, improves page load times, and makes the web more secure. While HTTP/1 is still widely used, more and more websites are adopting
+ HTTP/2 to provide a better user experience.
