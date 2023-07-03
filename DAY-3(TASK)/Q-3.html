@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHttpRequest</title>
+</head>
+<body>  
+    <script>
+        /*Use the rest countries API URL -> https://restcountries.com/v3 1/all and display
+         all the regions,name,sub-regions,population in the console*/
+    var xhr = new XMLHttpRequest();
+
+// Define HTTP method and URL
+var method = "GET";
+var url = "https://restcountries.com/v3.1/all"; // Updated URL
+
+// Open the request
+xhr.open(method, url);
+
+xhr.onload = function () {
+  if (xhr.status === 200) {
+    // Request was successful
+    var countriesDetails = JSON.parse(xhr.responseText);
+    for (var i = 0; i < countriesDetails.length; i++) {
+      var country = countriesDetails[i];
+      var region = country.region;
+      var name = country.name.common;
+      var subRegion = country.subregion;
+      var population = country.population;
+
+      console.log(`Region: ${region}`);
+      console.log(`Name: ${name}`);
+      console.log(`Sub-Region: ${subRegion}`);
+      console.log(`Population: ${population}`);
+    }
+  } else {
+    // Request failed
+    console.log("Request failed", xhr.status);
+  }
+};
+
+// Send the request
+xhr.send();
+</script>
+</body>
+</html>
