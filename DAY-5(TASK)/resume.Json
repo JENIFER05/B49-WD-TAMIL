@@ -1,0 +1,39 @@
+{
+    "name": "Jenifer",
+    "email": "jeniferdancisto@email.com",
+    "phone": "7550151976",
+    "address": {
+    "street": "1e/123 kamarajar st,west lakshim nagar,mudichur",
+    "city": "chennai",
+    "state": "Ctamailnadu",
+    "zip": "600048"
+    },
+    "education": [
+      {
+        "institution": "peri college of art and science",
+        "degree": "Bachelor of Science in Computer Application ",
+        "Endyear ": " 2022"
+      }
+      
+    ],
+    "work_experience": [
+      {
+        "company": "postiefs technologies",
+        "title": "Noc Support Engineer",
+        "start_date": "July 2022",
+        "end_date": "Feburay 2023",
+        "responsibilities": [
+          "maintain server alter",
+          "getting feedback from client"
+          ]
+      } 
+    ],
+    "skills": [
+      {
+        "programming" :[
+      "Java",
+      "HTML"
+        ]
+      }
+    ]
+  }
